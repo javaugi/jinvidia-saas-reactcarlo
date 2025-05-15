@@ -1,13 +1,13 @@
-package com.jinvindia.reactcarlo;
+package com.jvidia.reactcloan;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JinvidiaReactcarloApplicationTests {
+class JvidiaReactCarloanTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    public void contextLoads() {
+    }
 
 }

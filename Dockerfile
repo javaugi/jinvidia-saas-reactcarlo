@@ -10,7 +10,7 @@
 
 # Use official OpenJDK runtime as base image
 #FROM oracle/jdk:
-FROM openjdk:17-jdk-slim
+FROM openjdk:21-jdk
 
 # Set working directory
 WORKDIR /app
@@ -24,7 +24,7 @@ WORKDIR /app
 #COPY ${DEPENDENCY}/BOOT-INF/classes /app
 
 # Copy the JAR file into the container
-COPY target/saasreactcarlo.jar app.jar
+COPY target/saasrecarlo.jar app.jar
 
 # Expose port 8080
 EXPOSE 8080
@@ -35,19 +35,19 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 #Step 1: Build the Spring Boot application
 #mvn clean package
 #Step 2: Build Docker image
-#docker build -t saasreactcarlo .
+#docker build -t saasrecarlo .
 #Step 3: Run the container:
-#docker run -p 8080:8080 saasreactcarlo  or docker run -p 8080:8080 --name my-react-app saasreactcarlo
+#docker run -p 8080:8080 saasrecarlo  or docker run -p 8080:8080 saasrecarlo
 #Step 4: visit http://localhost:8080/  or curl http://localhost:8080
 # Additional Useful Commands
 # View running containers:
 #	docker ps
 # View logs:
-#	docker logs saasreactcarlo
+#	docker logs saasrecarlo
 # Stop the container:
-#	docker stop saasreactcarlo
+#	docker stop saasrecarlo
 # Remove the container:
-#	docker rm saasreactcarlo
+#	docker rm saasrecarlo
 #
 #
 #Alternative
