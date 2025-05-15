@@ -22,12 +22,13 @@ import org.springframework.beans.support.PagedListHolder;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 // http://learningprogramming.net/java/spring-mvc/pagination-with-spring-data-jpa-in-spring-mvc/
 // https://examples.javacodegeeks.com/enterprise-java/spring/mvc/spring-mvc-pagination-example/
 // https://examples.javacodegeeks.com/enterprise-java/spring/data/spring-data-jparepository-example/
 //
-@Controller
+@RestController
 @RequestMapping("/users")
 public class UserController {
 
